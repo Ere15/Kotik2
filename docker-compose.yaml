@@ -1,0 +1,12 @@
+version: "4.26"
+
+services:
+  app:
+    build: ./
+    container_name: gradle-app
+    volumes:
+      - ./:/com.example
+    ports:
+      - 80:80
+    expose:
+      - 8080
